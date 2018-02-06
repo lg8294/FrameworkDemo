@@ -108,6 +108,7 @@
 		81B62E4020298BEE000EC960 /* ld.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ld.py; sourceTree = "<group>"; };
 		81B62E4220298CE5000EC960 /* carthage-build-static.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "carthage-build-static.sh"; sourceTree = "<group>"; };
 		81B62E4420298FA5000EC960 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		81B62E452029B36B000EC960 /* Script2.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script2.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +155,7 @@
 				81B62E4220298CE5000EC960 /* carthage-build-static.sh */,
 				81B62E4020298BEE000EC960 /* ld.py */,
 				81B62E3F202979DA000EC960 /* Script.sh */,
+				81B62E452029B36B000EC960 /* Script2.sh */,
 				81409BEE2028422300DBCF78 /* LGLog */,
 				81409BD0202841D900DBCF78 /* FrameworkDemo */,
 				81409BDB202841DA00DBCF78 /* FrameworkDemoTests */,
@@ -625,6 +627,10 @@
 		81409BE3202841DA00DBCF78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -648,6 +654,10 @@
 		81409BE4202841DA00DBCF78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -726,6 +736,10 @@
 		81B62E0920294B90000EC960 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -736,7 +750,7 @@
 				INFOPLIST_FILE = StaticFrameworkDemo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = mh_dylib;
+				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lg.StaticFrameworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -749,6 +763,10 @@
 		81B62E0A20294B90000EC960 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -759,7 +777,7 @@
 				INFOPLIST_FILE = StaticFrameworkDemo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = mh_dylib;
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lg.StaticFrameworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

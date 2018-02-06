@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "81B62DF120294B8F000EC960"
-               BuildableName = "StaticFrameworkDemo.framework"
-               BlueprintName = "StaticFrameworkDemo"
+               BlueprintIdentifier = "81409BCD202841D900DBCF78"
+               BuildableName = "FrameworkDemo.framework"
+               BlueprintName = "FrameworkDemo"
                ReferencedContainer = "container:FrameworkDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,7 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "81409BD6202841DA00DBCF78"
+               BuildableName = "FrameworkDemoTests.xctest"
+               BlueprintName = "FrameworkDemoTests"
+               ReferencedContainer = "container:FrameworkDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "81409BCD202841D900DBCF78"
+            BuildableName = "FrameworkDemo.framework"
+            BlueprintName = "FrameworkDemo"
+            ReferencedContainer = "container:FrameworkDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -47,9 +66,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "81B62DF120294B8F000EC960"
-            BuildableName = "StaticFrameworkDemo.framework"
-            BlueprintName = "StaticFrameworkDemo"
+            BlueprintIdentifier = "81409BCD202841D900DBCF78"
+            BuildableName = "FrameworkDemo.framework"
+            BlueprintName = "FrameworkDemo"
             ReferencedContainer = "container:FrameworkDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +84,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "81B62DF120294B8F000EC960"
-            BuildableName = "StaticFrameworkDemo.framework"
-            BlueprintName = "StaticFrameworkDemo"
+            BlueprintIdentifier = "81409BCD202841D900DBCF78"
+            BuildableName = "FrameworkDemo.framework"
+            BlueprintName = "FrameworkDemo"
             ReferencedContainer = "container:FrameworkDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
