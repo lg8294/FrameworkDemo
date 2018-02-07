@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-//#import <FrameworkDemo/FrameworkDemo.h>
-#import <StaticFrameworkDemo/StaticFrameworkDemo.h>
+#import <FrameworkDemo/FrameworkDemo.h>
+//#import <StaticFrameworkDemo/StaticFrameworkDemo.h>
 
 @interface AppDelegate ()
 

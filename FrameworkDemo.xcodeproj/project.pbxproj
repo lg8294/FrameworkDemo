@@ -34,12 +34,11 @@
 		81409C35202848B300DBCF78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81409C34202848B300DBCF78 /* Assets.xcassets */; };
 		81409C38202848B300DBCF78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81409C36202848B300DBCF78 /* LaunchScreen.storyboard */; };
 		81409C3B202848B300DBCF78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81409C3A202848B300DBCF78 /* main.m */; };
-		81409C5820284CAF00DBCF78 /* FrameworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81409BCE202841D900DBCF78 /* FrameworkDemo.framework */; };
-		81409C5920284CAF00DBCF78 /* FrameworkDemo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81409BCE202841D900DBCF78 /* FrameworkDemo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		814C4A20202AD0E9007F54CB /* FrameworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81409BCE202841D900DBCF78 /* FrameworkDemo.framework */; };
+		814C4A21202AD0E9007F54CB /* FrameworkDemo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81409BCE202841D900DBCF78 /* FrameworkDemo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		81B62E0420294B90000EC960 /* StaticFrameworkDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B62DF420294B90000EC960 /* StaticFrameworkDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81B62E0F20294BBD000EC960 /* LGLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 81409BEF2028422300DBCF78 /* LGLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81B62E1020294BBD000EC960 /* LGLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 81409BF02028422300DBCF78 /* LGLog.m */; };
-		81B62E3B20295249000EC960 /* StaticFrameworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B62DF220294B8F000EC960 /* StaticFrameworkDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,30 +49,23 @@
 			remoteGlobalIDString = 81409BCD202841D900DBCF78;
 			remoteInfo = FrameworkDemo;
 		};
-		81409C5A20284CAF00DBCF78 /* PBXContainerItemProxy */ = {
+		814C4A22202AD0E9007F54CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 81409BC5202841D900DBCF78 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 81409BCD202841D900DBCF78;
 			remoteInfo = FrameworkDemo;
 		};
-		81B62E3C2029528B000EC960 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 81409BC5202841D900DBCF78 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 81B62DF120294B8F000EC960;
-			remoteInfo = StaticFrameworkDemo;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		81409C5C20284CAF00DBCF78 /* Embed Frameworks */ = {
+		814C4A24202AD0E9007F54CB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				81409C5920284CAF00DBCF78 /* FrameworkDemo.framework in Embed Frameworks */,
+				814C4A21202AD0E9007F54CB /* FrameworkDemo.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,7 +100,6 @@
 		81B62E4020298BEE000EC960 /* ld.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ld.py; sourceTree = "<group>"; };
 		81B62E4220298CE5000EC960 /* carthage-build-static.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "carthage-build-static.sh"; sourceTree = "<group>"; };
 		81B62E4420298FA5000EC960 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		81B62E452029B36B000EC960 /* Script2.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script2.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81B62E3B20295249000EC960 /* StaticFrameworkDemo.framework in Frameworks */,
-				81409C5820284CAF00DBCF78 /* FrameworkDemo.framework in Frameworks */,
+				814C4A20202AD0E9007F54CB /* FrameworkDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +145,6 @@
 				81B62E4220298CE5000EC960 /* carthage-build-static.sh */,
 				81B62E4020298BEE000EC960 /* ld.py */,
 				81B62E3F202979DA000EC960 /* Script.sh */,
-				81B62E452029B36B000EC960 /* Script2.sh */,
 				81409BEE2028422300DBCF78 /* LGLog */,
 				81409BD0202841D900DBCF78 /* FrameworkDemo */,
 				81409BDB202841DA00DBCF78 /* FrameworkDemoTests */,
@@ -305,13 +294,12 @@
 				81409C25202848B300DBCF78 /* Sources */,
 				81409C26202848B300DBCF78 /* Frameworks */,
 				81409C27202848B300DBCF78 /* Resources */,
-				81409C5C20284CAF00DBCF78 /* Embed Frameworks */,
+				814C4A24202AD0E9007F54CB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				81B62E3D2029528B000EC960 /* PBXTargetDependency */,
-				81409C5B20284CAF00DBCF78 /* PBXTargetDependency */,
+				814C4A23202AD0E9007F54CB /* PBXTargetDependency */,
 			);
 			name = TestDemo;
 			productName = TestDemo;
@@ -482,15 +470,10 @@
 			target = 81409BCD202841D900DBCF78 /* FrameworkDemo */;
 			targetProxy = 81409BD9202841DA00DBCF78 /* PBXContainerItemProxy */;
 		};
-		81409C5B20284CAF00DBCF78 /* PBXTargetDependency */ = {
+		814C4A23202AD0E9007F54CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 81409BCD202841D900DBCF78 /* FrameworkDemo */;
-			targetProxy = 81409C5A20284CAF00DBCF78 /* PBXContainerItemProxy */;
-		};
-		81B62E3D2029528B000EC960 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 81B62DF120294B8F000EC960 /* StaticFrameworkDemo */;
-			targetProxy = 81B62E3C2029528B000EC960 /* PBXContainerItemProxy */;
+			targetProxy = 814C4A22202AD0E9007F54CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -707,12 +690,16 @@
 		81409C48202848B400DBCF78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35Y285QLG5;
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lg.TestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -722,6 +709,10 @@
 		81409C49202848B400DBCF78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35Y285QLG5;
